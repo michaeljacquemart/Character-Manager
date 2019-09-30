@@ -1,0 +1,30 @@
+{
+  "name": "character-manager",
+  "version": "1.0.0",
+  "description": "Parcours les personnages des comics books",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test",
+    "scss": "node-sass --watch assets/scss -o assets/css",
+    "tsc": "tsc -w --pretty --target 'es5'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AugustinDumont/Character-Manager.git"
+  },
+  "keywords": [
+    "axios",
+    "typescript",
+    "comics"
+  ],
+  "author": "Michael et Gus",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AugustinDumont/Character-Manager/issues"
+  },
+  "homepage": "https://github.com/AugustinDumont/Character-Manager#readme",
+  "dependencies": {
+    "node-sass": "^4.12.0",
+    "typescript": "^3.6.3"
+  }
+}
