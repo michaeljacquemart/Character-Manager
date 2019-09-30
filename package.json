@@ -1,12 +1,13 @@
 {
   "name": "character-manager",
   "version": "1.0.0",
-  "description": "Parcours les personnages des comics books",
+  "description": "manage your comics characters",
   "main": "index.js",
   "scripts": {
     "test": "npm test",
     "scss": "node-sass --watch assets/scss -o assets/css",
-    "tsc": "tsc -w --pretty --target 'es5'"
+    "build": "tsc -p ./",
+    "start": "npm run build -- -w"
   },
   "repository": {
     "type": "git",
@@ -24,7 +25,11 @@
   },
   "homepage": "https://github.com/AugustinDumont/Character-Manager#readme",
   "dependencies": {
-    "node-sass": "^4.12.0",
+    "node-sass": "^4.12.0"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.3",
+    "parcel-plugin-typescript": "^1.0.0",
     "typescript": "^3.6.3"
   }
 }
